@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace C_Uppgift_5._10
 {
+/*Lyckades med att skapa ett program som kan hitta det vanligaste talet men jag har inte lyckats 
+ få det att fungera med flera tal på förstaplats.*/
     class Program
     {
         public static void Main()
@@ -16,7 +18,6 @@ namespace C_Uppgift_5._10
             for (int i = 0; i < nummer.Length; i++)
             {
                 int förekommer = 0;
-                int element = 0;
                 for (int j = 0; j < nummer.Length; j++)
                 {
                     if (nummer[j] == nummer[i])
@@ -30,7 +31,7 @@ namespace C_Uppgift_5._10
                     }
                 }
             }
-            Console.WriteLine(mestFörekommandeElement);
+            Console.WriteLine($"{mestFörekommandeElement}, {antal}");
             Console.ReadKey();
         }
     }
